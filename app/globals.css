@@ -489,6 +489,7 @@ button {
   .nav-cluster {
     width: auto;
     gap: 12px;
+    justify-content: flex-end;
   }
 
   .inline-actions {

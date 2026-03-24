@@ -22,7 +22,9 @@ export default function RootLayout({
           <div className="shell">
             <header className="topbar">
               <div className="nav-cluster">
-                <SiteMenu />
+                <Show when="signed-in">
+                  <SiteMenu />
+                </Show>
 
                 <div className="inline-actions">
                   <Show when="signed-out">
@@ -37,7 +39,6 @@ export default function RootLayout({
                       </button>
                     </SignUpButton>
                   </Show>
-
                   <Show when="signed-in">
                     <UserButton />
                   </Show>
